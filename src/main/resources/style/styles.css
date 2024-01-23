@@ -1,0 +1,18 @@
+
+
+#userName{
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-text-fill: BLACK;
+    -fx-prompt-text-fill: black;
+    -fx-border-color-bottom:#ffffff;
+}
+#loginButton{
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-background-color: #b8e994;
+}
+#loginButton:hover{
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-background-color:  #78e08f;
+}
