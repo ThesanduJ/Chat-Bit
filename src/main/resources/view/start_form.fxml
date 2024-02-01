@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="mainPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.StartFormController">
+   <children>
+      <ImageView fitHeight="277.0" fitWidth="300.0" layoutX="36.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/3d-fluency-chat-bubbles.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="320.0" layoutY="96.0" prefHeight="59.0" prefWidth="185.0" text="Welcome to the">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="464.0" layoutY="125.0" prefHeight="75.0" prefWidth="81.0" text="ChatBit">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="483.0" layoutY="324.0" onAction="#btnNextOnAction" prefHeight="61.0" prefWidth="64.0" text="Button" textFill="TRANSPARENT">
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-topic-moved-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
