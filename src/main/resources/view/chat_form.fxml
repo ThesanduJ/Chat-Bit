@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode2" prefHeight="357.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ChatFormController">
+   <children>
+      <TextField layoutX="16.0" layoutY="300.0" prefHeight="37.0" prefWidth="380.0" promptText="Type a meassage" />
+      <JFXButton fx:id="btnSend" layoutX="523.0" layoutY="297.0" onAction="#btnSendOnAction" prefHeight="42.0" prefWidth="44.0" text="Button" textFill="TRANSPARENT">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/send.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnFile" layoutX="461.0" layoutY="297.0" onAction="#btnFIleOnAction" prefHeight="42.0" prefWidth="42.0" text="Button" textFill="TRANSPARENT">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/file.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ScrollPane fx:id="scrollPane" layoutX="16.0" layoutY="67.0" prefHeight="223.0" prefWidth="569.0">
+         <content>
+            <VBox fx:id="vbox" prefHeight="204.0" prefWidth="561.0" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="157.0" layoutY="14.0" prefHeight="37.0" prefWidth="287.0" text="ChatBit Message Application" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnEmoji" layoutX="399.0" layoutY="298.0" onAction="#btnEmojiOnAction" prefHeight="42.0" prefWidth="42.0" text="Button" textFill="TRANSPARENT">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/emoji.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

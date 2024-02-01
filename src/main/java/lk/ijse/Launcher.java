@@ -21,6 +21,7 @@ public class Launcher extends Application {
         stage.getIcons().add(image);
         stage.setScene(scene);
         stage.setTitle("Login Page");
+        stage.setResizable(false);
         stage.show();
     }
 }
