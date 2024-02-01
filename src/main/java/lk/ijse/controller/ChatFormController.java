@@ -55,26 +55,28 @@ public class ChatFormController implements Initializable {
     private TextField txt;
     private Client client;
 
-    private final String[] emojis={
-            "U+1F44B",
-            "U+1F44C",
-            "U+1F90C",
-            "U+270C",
-            "U+1F91F",
-            "U+1F918",
-            "U+1F919",
-            "U+1F448",
-            "U+1F44D",
-            "U+1F44E",
-            "U+1F64F",
-            "U+270D",
-            "U+1F9BE",
-            "U+1F91D",
-            "U+1FAF6",
-            "U+1F44A",
-            "U+270B"
+    private final String[] emojis = {
+            "\uD83D\uDE00",
+            "\uD83D\uDE01",
+            "\uD83D\uDE02",
+            "\uD83D\uDE03",
+            "\uD83D\uDE04",
+            "\uD83D\uDE05",
+            "\uD83D\uDE06",
+            "\uD83D\uDE07",
+            "\uD83D\uDE08",
+            "\uD83D\uDE09",
+            "\uD83D\uDE0A",
+            "\uD83D\uDE0B",
+            "\uD83D\uDE0C",
+            "\uD83D\uDE0D",
+            "\uD83D\uDE0E",
+            "\uD83D\uDE0F",
+            "\uD83D\uDE10",
+            "\uD83D\uDE11",
+            "\uD83D\uDE12",
+            "\uD83D\uDE13"
     };
-
     @FXML
     void btnFIleOnAction(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
