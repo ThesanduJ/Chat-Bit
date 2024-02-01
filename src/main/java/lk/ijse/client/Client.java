@@ -12,6 +12,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.Serializable;
 import java.net.Socket;
+import javafx.scene.image.Image;
 
 public class Client implements Runnable, Serializable {
     private final String name;
@@ -88,6 +89,8 @@ public class Client implements Runnable, Serializable {
         stage.setResizable(false);
         stage.setScene(new Scene(parent));
         stage.setTitle(name + "'s Chat");
+        Image image=new Image("/assets/chat Icon.png");
+        stage.getIcons().add(image);
         stage.show();
 
         stage.setOnCloseRequest(event->{
