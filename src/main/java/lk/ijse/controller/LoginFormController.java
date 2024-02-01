@@ -12,6 +12,7 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import lk.ijse.Launcher;
+import lk.ijse.Server.Server;
 
 import java.io.IOException;
 
@@ -24,6 +25,10 @@ public class LoginFormController {
 
     @FXML
     void btnLoginOnAction(ActionEvent event) throws Exception {
+        Server serverSocket = Server.getServerSocket();
+        Thread thread = new Thread(serverSocket);
+        thread.start();
+
         String title = (String) userName.getText();
         if (!title.equals("")) {
 
