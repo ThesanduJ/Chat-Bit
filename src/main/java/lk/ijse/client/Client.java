@@ -79,8 +79,9 @@ public class Client implements Runnable, Serializable {
     }
 
     private void loadScene() throws IOException {
+
         Stage stage = new Stage();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/client_window_form.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/chat_form.fxml"));
         Parent parent = loader.load();
         chat = loader.getController();
         chat.setClient(this);
